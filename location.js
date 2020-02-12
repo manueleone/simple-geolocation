@@ -1,11 +1,11 @@
 // import the necessary modules
-var mongoose = require('mongoose');
-var Schema = mongoose.Schema;
+const mongoose = require('mongoose');
+const Schema = mongoose.Schema;
 
 // model creation
 
-var LocationModel = function() {
-  var LocationSchema = new Schema({
+const LocationModel = function() {
+  const LocationSchema = new Schema({
     name: String,
     loc: {
       type: [Number],   // format will be [ <longitude> , <latitude> ]
